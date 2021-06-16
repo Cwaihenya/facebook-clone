@@ -1,2 +1,10 @@
 <h1><%= @user.name %>page</h1>
 <p>E-mail address: <%= @user.email %></p>
+<p>
+  <strong>Photo:</strong>
+    <% if @user.has_photo? %>
+      <%= image_tag @user.photo_path %>
+    <% else %>
+      No photo.
+    <% end %>
+</p>

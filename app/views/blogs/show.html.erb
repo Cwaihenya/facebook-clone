@@ -4,6 +4,11 @@
   <strong>Content:</strong>
   <%= @blog.content %>
 </p>
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @blog.image.url %>
+</p>
+
 
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
 <%= link_to 'return to the blogs list', blogs_path %>
