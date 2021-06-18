@@ -1,3 +1,56 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+h1
+{
+  font-size: 30pt;
+  color:blue;
+  margin-top: 60px
+}
+header
+  {
+  width: 100%;
+  background-color: #283A4B;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  text-indent: 3mm;
+  text-decoration: none;
+  box-shadow: none;
+  border: 0;
+  text-decoration: none;
+    }
+    .top_menu li a{
+  color: #FFFFFF;
+}
+.right
+    {
+    float: right;
+    display: inline;
+    color: white !important;
+    text-decoration: none;
+    margin-right: 30px;
+    }
+li
+  {   list-style: none;
+
+  }
+
+.footer
+  {
+    background-color: #283A4B;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+.footer p
+{
+  background-color: #283A4B;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+
+  /* Addendum */
+}

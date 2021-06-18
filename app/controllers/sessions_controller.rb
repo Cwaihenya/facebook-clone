@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+
   def new
   end
   def create
@@ -10,5 +11,10 @@ class SessionsController < ApplicationController
       flash.now[:danger] = 'Email address or password are incorrect, please try again'
       render :new
     end
+  end
+  def destroy
+    session.delete(:user_id)
+    flash[:notice] = 'ログアウトしました'
+    redirect_to new_session_path
   end
 end
